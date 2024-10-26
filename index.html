@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <div class="container light-mode">
+        <h2>QR Code Generator</h2>
+        <form method="GET">
+            <input type="text" name="text" placeholder="Enter text" required>
+            <button type="submit">Generate QR Code</button>
+        </form>
+        <div class="error" id="error-message"></div>
+        <div class="qr-code" id="qr-code-container"></div>
+        <div class="dark-mode-toggle">
+            <label>
+                <input type="checkbox" id="darkModeSwitch"> Dark Mode
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
